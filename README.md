@@ -1,4 +1,4 @@
-# SpringbootUno
+# SpringbootUno_DB
 
 Connección a MYSQL
 Archivo ---> Cambiar application.properties por application.yml
