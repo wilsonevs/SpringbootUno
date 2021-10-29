@@ -25,3 +25,5 @@ logging:
     org:
       hibernate:
         SQL: debug
+
+3
