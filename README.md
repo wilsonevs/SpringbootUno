@@ -9,9 +9,9 @@ server:
 spring:
 #1. Conexión a BD MySQL
   datasource:
-    url: jdbc:mysql://localhost:3306/curso_springboot?useSSL=false&serverTimeZone=UTC
-    driverClassName: com.mysql.jdbc.Driver
-    username: root
+ *   url: jdbc:mysql://localhost:3306/curso_springboot?useSSL=false&serverTimeZone=UTC
+ *   driverClassName: com.mysql.jdbc.Driver
+ *   username: root
     password:
 #2. Jpa nos permite resolver problemas de almacenamiento de los objetos en una base de datos relacional
   jpa:
