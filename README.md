@@ -26,4 +26,5 @@ spring:
 *      hibernate:
 *        SQL: debug
 
-3
+# Archivo build.gradle
+	--> Implementamos dentro de dependencies --> runtimeOnly 'mysql:mysql-connector-java'
