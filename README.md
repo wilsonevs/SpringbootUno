@@ -30,6 +30,16 @@ spring:
 	--> Implementamos dentro de dependencies --> runtimeOnly 'mysql:mysql-connector-java'
 
 SWAGGER 3
+Si están utilizando la versión 3.0.0 de swagger, se debe tener en cuenta lo siguiente:
+
+En el archivo bundle.gradle se debe añadir las siguientes líneas
+implementation "io.springfox:springfox-boot-starter:3.0.0"
+compile “io.springfox:springfox-swagger-ui:3.0.0”
+
+En la clase SwaggerConfig ya no hace falta añadir la anotación @EnableSwagger2
+
+La url de acceso a la documentación es: {host}:{puerto} / {contexto} /swagger-ui/index.html
+
 http://localhost:8079/wcone_market/api/swagger-ui/index.html
 iNSTAALAR ESTAS DOS DEPEDENCIAS
 https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter/3.0.0
