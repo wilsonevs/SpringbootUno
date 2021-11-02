@@ -10,6 +10,14 @@ Configuración del proyecto del lenguaje java con el poderoso framework Spring b
 
 Cambiar **application.properties** por la extención "YML", **application.yml**. Nos brindara un manejo mucho mas legible.
 
+Se pueden especificar varias propiedades dentro de su application.propertiesarchivo, dentro de su application.ymlarchivo o como interruptores de línea de comando. Este apéndice proporciona una lista de propiedades comunes de Spring Boot y referencias a las clases subyacentes que las consumen.
+
+#### DOCUMENTACIÓN
+Formato = [YAML](https://www.baeldung.com/spring-boot-yaml-vs-properties)\
+Comunes de la aplicación = 
+1.[PROPERTIES](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html),
+2.[PROPERTIES](https://docs.spring.io/spring-boot/docs/1.1.6.RELEASE/reference/html/common-application-properties.html)
+
 ***PERFIL***
 ```application.yml
 spring:
