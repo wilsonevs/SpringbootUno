@@ -10,7 +10,7 @@
 ## APPLICATION.YML
 #### ¡SUGERENCIA!
 
-Cambiar **application.properties** por la extención "YML", quedari de la siguiente forma **application.yml**
+Cambiar **application.properties** por la extención "YML", **application.yml**. Nos brindara un manejo mucho mas legible.
 
 ***PERFIL***
 ```application.yml
