@@ -75,7 +75,7 @@ logging:
 | [SpringFox Swagger UI](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/3.0.0) | `io.springfox:springfox-swagger-ui:3.0.0` |
 
 ### build.gradle
-```build.gradle
+```application.yml
 dependencies {
 // swagger2
 	implementation "io.springfox:springfox-boot-starter:3.0.0"
@@ -83,26 +83,50 @@ dependencies {
 }
 ```
 
-### pom.xml
+### Maven
 
-```pom.xml
-<dependencies>
-	<!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
-	<dependency>
-	    <groupId>io.springfox</groupId>
-	    <artifactId>springfox-boot-starter</artifactId>
-	    <version>3.0.0</version>
-	</dependency>
+```application.yml
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-boot-starter</artifactId>
+    <version>3.0.0</version>
+</dependency>
 
-	<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
-	<dependency>
-	    <groupId>io.springfox</groupId>
-	    <artifactId>springfox-swagger-ui</artifactId>
-	    <version>3.0.0</version>
-	</dependency>
-</dependencies>
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>3.0.0</version>
+</dependency>
 ```
 
 ## NAVEGADOR
 **LA URL DE ACCESO A LA DOCUMENTACIÓN ES =**
 `{host}:{puerto} / {contexto} /swagger-ui/index.html`
+## AuthenticationManager
+
+Reemplazar el método authenticationManagerBeande WebSecurityConfigurerAdapterexponer la AuthenticationManager construido usando configure(AuthenticationManagerBuilder)como un grano de primavera:
+
+```SecurityConfig.java
+ @Bean(name = BeanIds.AUTHENTICATION_MANAGER)
+   @Override
+   public AuthenticationManager authenticationManagerBean() throws Exception {
+       return super.authenticationManagerBean();
+   }
+```
+Es posible que desee usar @Import para agregar clases de 
+@Configuration a la otra clase (AuthController en mi caso):
+```AuthController.java
+@Import(SecurityConfig.class)
+@RestController
+@RequestMapping("/auth")
+public class AuthController {
+
+    @Autowired
+    private AuthenticationManager authenticationManager;
+
+    //some logic
+
+}
+```
