@@ -66,7 +66,7 @@ logging:
 | [SpringFox Boot Starter](https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter/3.0.0) | `io.springfox:springfox-boot-starter:3.0.0` |
 | [SpringFox Swagger UI](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/3.0.0) | `io.springfox:springfox-swagger-ui:3.0.0` |
 
-## build.gradle
+### build.gradle
 ```application.yml
 dependencies {
 // swagger2
@@ -75,7 +75,7 @@ dependencies {
 }
 ```
 
-## Maven
+### Maven
 
 ```application.yml
 <!-- https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter -->
