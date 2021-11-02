@@ -75,7 +75,7 @@ logging:
 | [SpringFox Swagger UI](https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui/3.0.0) | `io.springfox:springfox-swagger-ui:3.0.0` |
 
 ### build.gradle
-```application.yml
+```build.gradle
 dependencies {
 // swagger2
 	implementation "io.springfox:springfox-boot-starter:3.0.0"
