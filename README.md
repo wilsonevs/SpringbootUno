@@ -1,8 +1,9 @@
-
-
 # WCONE_MARKET
 
-Configuración del proyecto del lenguaje java con el poderoso framework Spring boot
+Configuración del proyecto del lenguaje java con el poderoso framework Spring boot.
+
+
+
 
 ## APPLICATION.YML
 #### ¡SUGERENCIA!
@@ -27,8 +28,8 @@ server:
 server:
   servlet:
     context-path: /Path
-```## CONEXIÓN A MySQL
-### Datasource
+```
+## CONEXIÓN A MySQL
 ```application.yml
 spring:
   #1. Conexión a BD MySQL
